@@ -82,6 +82,6 @@ class PetitionController extends Controller
     public function destroy(Petition $petition)
     {
         $petition->delete();
-        return response()->json(data: null, status: 204);
+        return response()->json(data: null, status: Response::HTTP_NO_CONTENT);
     }
 }
